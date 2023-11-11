@@ -1,0 +1,669 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+:root{
+    --background-header-color: #fcaf17;
+    --background-button-color: #0079c1;
+    --border-color-active-variant: #ffa900;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    background-color: var(--background-header-color);
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar-header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* BURGER STYLES */
+
+
+.burger-btn{
+    display: none;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/burger.png');
+    cursor: pointer;
+}
+.burger-menu-wrapper{
+    position: absolute;
+    display: none;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(67, 67, 67, 0.573);
+    height: 100vh;
+}
+.burger-menu{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    overflow-y: auto;
+}
+.burger-container{
+    min-width: 200px;
+    width: 90%;
+    margin: auto;
+}
+
+.burger-menu-section-log{
+    width: 100%;
+    height: 60px;
+    background-color: #004066;
+}
+
+.burger-login-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+}
+.burger-login-logo{
+    width: 40px;
+}
+.burger-signin-text{
+    font-size: 14px;
+    color: white;
+    padding-left: 5px;
+}
+
+.burger-element{
+    padding: 20px;
+    background-color: #0079c1;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger-element p{
+   font-size: 16px;
+   font-weight: 700;
+   color: white; 
+}
+.burger-element-arrow{
+    width: 15px;
+    height: 15px;
+}
+
+.burger-menu-section-account-list li{
+    padding: 15px 0px;
+    cursor: pointer;
+}
+
+.burger-menu-section-account-list li a{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;   
+    border-bottom: 1px solid rgb(255, 255, 255);     
+}
+.burger-menu-section-account-list li a:hover{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(127, 127, 127);
+}
+
+
+
+
+.burger-menu-navbar-panel{
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    float: right;
+    display: none;
+}
+.burger-menu-navbar-panel-show{
+    display: block;
+    left: 0;
+}
+
+
+.burger-navbar-panel-element{
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.burger-navbar-panel-element p{
+   font-size: 16px;
+   font-weight: 700;
+   color: rgb(0, 0, 0); 
+}
+.burger-navbar-panel-back-btn{
+    background-color: #0079c1;
+    display: flex;
+    justify-content: flex-start;
+}
+.burger-navbar-panel-element-arrow{
+    width: 15px;
+}
+.burger-navbar-panel-back-btn p{
+    color: rgb(255, 255, 255); 
+    padding: 0px 10px;
+}
+
+
+
+
+
+
+.navbar-header-sharaf-logo{
+    width: 180px;
+    height: 40px;
+}
+
+.navbar-search{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.navbar-search-form{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-result-panel{
+    display: none;
+    position: absolute;
+    top: 50px;
+    height: 600px;
+    background-color: white;
+    -webkit-box-shadow: 1px 12px 19px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px 12px 19px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 12px 19px 3px rgba(34, 60, 80, 0.2);
+}
+.search-result-panel-container{
+    padding: 5px;
+}
+.result-product{
+/*     display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding: 5px 0px;
+}
+.result-product-img{
+    width: 50px;
+
+}
+.result-product-name{
+    font-size: 13px;
+    margin-left: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+.result-product-price{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+.search-form-loupe-logo{
+    width: 20px;
+}
+
+.search-form-text-input{
+    width: 100%;
+    height: 20px;
+    margin-left: 5px;
+    border: 0px;
+    outline: none;
+    font-size: 15px;
+}
+
+.header-euronics-logo{
+    width: 40px;
+    margin-left: 3px;
+}
+
+.navbar-flag{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-flag-logo{
+    width: 25px;
+}
+
+.navbar-flag-text{
+    font-size: 12px;
+}
+
+
+
+.login-logo{
+    width: 25px;
+}
+
+.navbar-login-wrapper{
+    display: flex;
+    align-items: center;
+}
+.signin-text{
+    font-size: 12px;
+    color: black;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+
+.navbar-header-cart-logo{
+    width: 33px;
+    margin-top: 5px;
+}
+.cartview-count{
+    display: none;
+    font-size: 9px;
+    color: black;
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: -29px;
+    background-color: rgb(242, 255, 0);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+
+/* navbar */
+
+.navbar{
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.navigation-menu__item-title{
+    font-size: 15px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.navigation-menu__item-title img{
+    width: 10px;
+    float: right;
+    padding: 5px 0px;
+    margin-right: 5px;
+}
+.list-inline{
+    display: flex;
+    justify-content: flex-start;
+}
+.navigation-menu li:first-child{
+    border-right: 1px solid #ddd;
+}
+.navigation-menu li{
+    padding: 10px 0px;
+    list-style-type: none;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.navigation-menu li:not(:first-child){
+    padding-left:15px;
+    padding-right:15px;
+}
+.navigation-menu li a{
+    font-size: 15px;
+}
+.navigation-menu li a:hover{
+    border-bottom: 3px solid orange;
+    padding-bottom: 5px;
+}
+
+/* Main */
+
+.main{
+    width: 100%;
+    min-height: 900px;
+    background-color: white;
+    padding-top: 100px;
+}
+
+.itc-slider-mobile{
+    display: none;
+}
+
+.slider-img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* Аккордеон HEADER */
+
+
+.accordeon-wrapper{
+    position: absolute;
+    width: 100%;
+    min-height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    z-index: 1000;
+}
+
+.accordeon-wrapper-visible{
+    display: block;
+}
+
+.accordeon-greed{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.accordeon-category-box{
+    min-height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+.accordeon-sections-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 800px;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgb(219, 219, 219);
+    border-right: 1px solid rgb(219, 219, 219);
+    padding: 10px;
+}
+
+.accordeon-brands-box{
+    min-height: 500px;
+}
+
+.accordeon-category-list{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.accordeon-category-list a{
+    
+}
+
+.accordeon-category-list li{
+    font-size: 14px;
+    line-height: normal;
+    padding: 5px 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.accordeon-category-list li:hover{
+    border-bottom: 1px solid black;
+}
+
+
+.accordeon-section-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.accordeon-section-list h2{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+.accordeon-section-list li{
+    font-size: 14px;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 3px 0px;
+}
+.accordeon-section-list li:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+
+.main-entry-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 70px 0px;
+}
+.banner{
+
+}
+.banner-img{
+    width: 100%;
+    border: 1px solid rgb(217, 217, 217);
+}
+
+
+
+.main-products-slider-sdg-ratio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-products-slider-sdg-ratio-img{
+    width: 120px;
+}
+.main-products-slider-sdg-ratio-text{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+/* Products Of Your Interest */
+
+
+.ProductOfYourInterestSection{
+    padding: 150px 0px;
+    z-index: 5;
+}
+.ProductOfYourInterestSection h1{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+.product-wrapper{
+    box-sizing: border-box;
+    min-height: 100px;
+    border-radius: 6px;
+    padding: 20px 0px;
+}
+.card{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+}
+.card:hover{
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.sdg-ratio{
+    text-align: center;
+}
+.product-img{
+    width: 100%;
+}
+.product-name h4{
+    padding: 10px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.rating-stars{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+.rating-item{
+    font-size: 16px;
+    color: #dcdcdc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.rating-stars[data-total-value="1"] .rating-item:nth-child(n + 5),
+.rating-stars[data-total-value="2"] .rating-item:nth-child(n + 4),
+.rating-stars[data-total-value="3"] .rating-item:nth-child(n + 3),
+.rating-stars[data-total-value="4"] .rating-item:nth-child(n + 2),
+.rating-stars[data-total-value="5"] .rating-item:nth-child(n + 1) {
+    color: black;
+}
+
+.rating-count{
+    display: inline;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.product-price{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 0px;
+}
+
+
+
+
+/* Media Mobile */
+
+
+@media (min-width: 1400px) {
+    .container{
+        width: 1200px;
+    }
+    .navbar{
+        display: block;
+    }
+}
+  
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .container{
+    width: 900px;
+  }
+  .navbar{
+    display: block;
+  }
+}
+
+
+@media (min-width: 540px) and (max-width: 899px) {
+    .container{
+      width: 550px;
+    }
+    .main-entry-content{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 899px){
+    .entry-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-euronics{
+        display: none;
+    }
+    .navbar-flag{
+        display: none;
+    }
+    .navbar-login{
+        display: none;
+    }
+}
+
+@media (max-width: 540px){
+    .container{
+        width: 90%;
+    }
+
+    .navbar-search{
+        position: static;
+    }
+    .search-result-panel{
+        top: 60px;
+        left: 0px;
+        height: 100vh;
+    }
+    .result-product-img{
+        width: 100%;
+    }
+    .result-product-price{
+        font-size: 11px;
+    }
+
+    .main-entry-content{
+        grid-template-columns: 1fr;
+    }
+    .navbar{
+        display: none;
+    }
+    .burger-btn{
+        display: block;
+    }
+    .navbar-header-sharaf-logo{
+        width: auto;
+        padding: 0px 10px;
+        content: url('../img/sharaf-dg-uae-logo-mobile.svg');
+        float: left;
+    }
+
+    .main{
+        padding-top: 60px;
+    }
+    .itc-slider-desktop{
+        display: none;
+    }
+    .itc-slider-mobile{
+        display: block;
+    }
+}
+
+

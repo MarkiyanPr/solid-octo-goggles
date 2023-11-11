@@ -1,0 +1,137 @@
+.footer{
+    width: 100%;
+}
+
+.footer-section {
+    background-color: white;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    padding: 10px 0px;
+}
+.footer-section-help{
+    border-top: 1px solid rgb(222, 222, 222);
+    margin-top: 100px;
+}
+
+.footer-container{
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.needHelpWrapper span{
+    font-size: 14px;
+    color: black;
+}
+
+.footer-logo-block{
+    display: flex;
+    align-items: center;
+}
+.footer-store-logo{
+    width: 40px;
+}
+
+.footer-store-text-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.footer-store-bold{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+}
+.footer-store-text{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+
+
+
+.payment-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment-content{
+    display: flex;
+    flex-direction: column;
+}
+.payment-img-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.payment-wrapper span{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+.payment-img-wrapper img{
+    width: 60px;
+}
+
+
+.member-evro-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.copyright-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text-copyright{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 1400px) {
+    .footer-container{
+        width: 1200px;
+    }
+}
+  
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    .footer-container{
+        width: 900px;
+    }
+}
+
+
+@media (min-width: 540px) and (max-width: 899px) {
+    .footer-container{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 899px){
+
+}
+
+@media (max-width: 540px){
+    .footer-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer-logo-block{
+        padding: 20px 0px;
+    }
+    .member-evro-wrapper{
+        padding: 20px 0px;
+    }
+}

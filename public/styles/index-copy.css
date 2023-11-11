@@ -1,0 +1,79 @@
+.accordeon-wrapper{
+    position: absolute;
+    width: 100%;
+    min-height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.accordeon-wrapper-visible{
+    display: block;
+}
+
+.accordeon-greed{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.accordeon-category-box{
+    min-height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+.accordeon-sections-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 800px;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgb(219, 219, 219);
+    border-right: 1px solid rgb(219, 219, 219);
+    padding: 10px;
+}
+
+.accordeon-brands-box{
+    min-height: 500px;
+}
+
+.accordeon-category-list{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.accordeon-category-list a{
+    
+}
+
+.accordeon-category-list li{
+    font-size: 14px;
+    line-height: normal;
+    padding: 5px 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.accordeon-category-list li:hover{
+    border-bottom: 1px solid black;
+}
+
+
+.accordeon-section-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.accordeon-section-list h2{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+.accordeon-section-list li{
+    font-size: 14px;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 3px 0px;
+}
+.accordeon-section-list li:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+  

@@ -1,0 +1,121 @@
+<div class="product_wrapper">
+    <div class="breadcrumb-wrapper">
+        <ul class="woocommerce-breadcrumb">
+            <li class="breadcrumb-first"><a href="">Online Shopping /</a></li>
+            <li class="breadcrumb-section"><a href="">Buy Now: <%=list[0].section %></a></li>
+        </ul>
+    </div>
+    <h1 class="cat-h1">
+        <%=list[0].section %> - Buy now
+    </h1>
+    <div class="entry-content">
+        <div class="banner">
+            <a href="">
+                <img class="banner-img" src="https://uae.sharafdg.com/wp-content/uploads/sites/7/2023/09/Apple-NPI-iPhone15Pro-220923-BuyNow-ENBDLiv_07-HP-Mobile-EN.jpg" alt="">
+            </a>
+        </div>
+        <div class="banner">
+            <a href="">
+                <img class="banner-img" src="https://uae.sharafdg.com/wp-content/uploads/sites/7/2023/09/Apple-NPI-iPhone15-220923-BuyNow-ENBDLiv_07-HP-Mobile-EN-copy.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="shop_grid">
+        <div class="filter-wrp">
+        <div class="expressDelivery-wrp">
+
+        </div>
+        <div class="filter-container">
+<!--                         <div class="filter-type">
+                <div class="filter-accordion">
+                    <div class="filter-header">
+                        <span class="cat-name">Category</span>
+                        <img src="" alt="">
+                    </div>
+                    <div class="filter-collapse">
+
+                    </div>
+                </div>
+            </div>
+            <div class="filter-type">
+                <div class="filter-accordion">
+                    <div class="filter-header">
+                        <span class="cat-name">Brand</span>
+                        <img src="" alt="">
+                    </div>
+                    <div class="filter-collapse">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="filter-type">
+                <div class="filter-accordion">
+                    <div class="filter-header">
+                        <span class="cat-name">Price</span>
+                        <img src="" alt="">
+                    </div>
+                    <div class="filter-collapse">
+                        
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="accordion" id="accordion-1">
+            <div class="accordion__item accordion__item_show">
+              <div class="accordion__header">
+                Заголовок 1
+              </div>
+              <div class="accordion__body">
+                Содержимое 1
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                Заголовок 2
+              </div>
+              <div class="accordion__body">
+              Содержимое 2
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="grid-view">
+        <div class="clearfix">
+            <div class="clearfix-content-wrapper">
+                <div class="clearfixSharafWrapper">
+                    <p>Sharaf DG Only</p>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="switch" />
+                        <label for="switch">Toggle</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <% for(let product of list){  %>
+                <div class="product-wrapper" id="<%=product.id%>">
+                    <a href='/product/<%=product.id%>'>
+                        <div class="sdg-ratio">
+                            <img src="<%= product.img %>" alt="" class="product-img">
+                        </div>
+                        <div class="product-name">
+                            <h4><%=product.name%></h4>
+                        </div>
+                        <div class="rating">
+                            <div class="rating-stars" data-total-value="<%= parseInt(product.rating) %>">
+                                <div class="rating-item" data-item-value="5">★</div>
+                                <div class="rating-item" data-item-value="4">★</div>
+                                <div class="rating-item" data-item-value="3">★</div>
+                                <div class="rating-item" data-item-value="2">★</div>
+                                <div class="rating-item" data-item-value="1">★</div>
+                            </div>
+                            <div class="rating-count"><%=product.rating%></div>
+                        </div>
+                        <div class="product-price">AED <%=product.price %></div>
+                    </a>
+                </div>
+            <%} %>
+        </div>
+    </div>
+</div>

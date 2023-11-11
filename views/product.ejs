@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping | Mobiles, Electronics & Appliances - Sharaf DG UAE</title>
+    <link rel="shortcut icon" href="/img/sharaf-dg-uae-logo-mobile.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,500;6..12,600;6..12,700&family=Ubuntu&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/assets/css/accordion.css">  
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/product.css"> 
+    <link rel="stylesheet" href="/styles/footer.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="/assets/js/itc-slider.js" defer></script>
+    <script src="/assets/js/animated-accordion.js" defer></script>
+    <script src="/assets/js/script.js" defer></script>
+    <script>
+        let navigation = `<%- navigation %>`
+        localStorage.setItem("navigation", navigation)
+    </script>
+    <%- include('header') %>
+    <main class="main">
+        <div class="container main_container">
+            <div class="product-box-greed">
+                <div class="product-box product-visual-box">
+                    <img src="<%=product.img%>" alt="" class="product-visual-box__sdg-ratio-img">
+                    <div class="product-visual-box__slider-wrapper">
+                    </div>
+                </div>
+                <div class="product-box product-info-box">
+                    <div class="product-info-section1">
+                        <span class="product-brand-name"><%=product.brand%></span>
+                        <h1 class="product-fullname"><%=product.name%></h1>
+                        <div class="product-rating">
+                            <div class="rating">
+                                <div class="rating-stars" data-total-value="4">
+                                    <div class="rating-item" data-item-value="5">★</div>
+                                    <div class="rating-item" data-item-value="4">★</div>
+                                    <div class="rating-item" data-item-value="3">★</div>
+                                    <div class="rating-item" data-item-value="2">★</div>
+                                    <div class="rating-item" data-item-value="1">★</div>
+                                </div>
+                                <div class="rating-count"><%=product.rating%></div>
+                                <div class="product-rewiews">39 Reviews</div>
+                                <div class="product-item-id"><%=product.id%></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info-section2">
+                        <% try{ %>
+                        <span class="product-color-type">
+                            <h4><%=(Object.keys(product.keyInformation[0]))[0]%>: </h4>
+                            <div class="product-color-type-text"><%=product.keyInformation[0][(Object.keys(product.keyInformation[0]))[0]] || '' %></div>
+                        </span>
+                        <div class="product-color-variants">
+<!--                             <div class="product-color-variants-box">
+                                <a href="" class="product-color-variants-links">
+                                    <img src="https://pimcdn.sharafdg.com/cdn-cgi/image/width=60,height=60,fit=pad/images/iphone_15_pro_max_black_titanium_1?1698321077" alt="Black" class="product-color-variants-img">
+                                </a>
+                            </div>
+                            <div class="product-color-variants-box">
+                                <a href="" class="product-color-variants-links">
+                                    <img src="https://pimcdn.sharafdg.com/cdn-cgi/image/width=60,height=60,fit=pad/images/iphone_15_pro_max_black_titanium_1?1698321077" alt="Silver" class="product-color-variants-img">
+                                </a>
+                            </div> -->
+                        </div>
+                        <%} catch{}%>
+                    </div>
+                </div>
+                <div class="product-box product-service-box">
+                    <div class="product-service-section1">
+                        <div class="product-service-box__price">AED <%=product.price%></div>
+                        <span class="product-service-boxInclusive">Inclusive of VAT</span>
+                        <div class="easy-payment-box">
+                            <img src="../img/payment-logo.png" alt="" class="easy-payment-img">
+                            <div class="easy-payment-plans-text">
+                                Easy Payment Plans <br>
+                                Starting from AED 475.75/month</div>
+                        </div>
+                        <div class="product-service-box__delivery">Delivery <%=date1%> - <%=date2%></div>
+                        <div class="product-service-box__addToCartButton-box">
+                            <div class="product-service-box__addToCartButton">ADD TO CART</div>
+                        </div>
+                        <div class="product-service-box__soldBy">
+                            <div class="soldByText">Sold by</div>
+                            <div class="soldName">Sharaf DG</div>
+                        </div>
+                    </div>
+                    <div class="product-service-section2">
+                        <div class="product-service-box__Warranty">
+                            <img src="../img/Warranty.png" alt="">
+                            <div class="product-service-box__Warranty-text">One Year Warranty</div>
+                        </div>
+                    </div>
+                    <div class="product-service-section3">
+                        <div class="product-service-box__Transaction">
+                            <img src="../img/Transaction.png" alt="">
+                            <div class="product-service-box__Transaction-text">Secure Transaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border_sections"></div>
+        <div class="container">
+            <div class="section_keyInfo">
+                <h1>Key Information</h1>
+                <div class="keyInfoWrapper">
+                    <div class="section_keyInfo_keys_box">
+                        <ul class="keys_list">
+                            <%  for(let i = 0; i < product.keyInformation.length; i++){ %>
+                                <li class="key"><%= (Object.keys(product.keyInformation[i]))[0]  %>: </li>
+                            <%} %>
+                        </ul>
+                    </div>
+                    <div class="section_keyInfo_value_box">
+                        <ul class="value_list">
+                            <%  for(let i = 0; i < product.keyInformation.length; i++){ %>
+                                <li class="value"><%=(product.keyInformation[i])[(Object.keys(product.keyInformation[i]))[0]] %></li>
+                            <%} %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border_sections"></div>
+        <div class="container">
+            <div class="peopleAlsoViewedSection">
+                <h1>People also viewed</h1>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="product-wrapper swiper-wrapper" id="1">
+                            <% for(let l of list){  %>
+                            <div class="card swiper-slide">
+                                <a href='/product/<%=l.id%>'>
+                                    <div class="sdg-ratio">
+                                        <img src="<%=l.img%>" alt="" class="product-img">
+                                    </div>
+                                    <div class="product-name">
+                                        <h4><%= l.name %></h4>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="rating-stars" data-total-value="<%= parseInt(l.rating) %>">
+                                            <div class="rating-item" data-item-value="5">★</div>
+                                            <div class="rating-item" data-item-value="4">★</div>
+                                            <div class="rating-item" data-item-value="3">★</div>
+                                            <div class="rating-item" data-item-value="2">★</div>
+                                            <div class="rating-item" data-item-value="1">★</div>
+                                        </div>
+                                        <div class="rating-count"><%= l.rating %></div>
+                                    </div>
+                                    <div class="product-price">AED <%= l.price %></div>
+                                </a>
+                            </div>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('footer') %>
+</body>
+</html>

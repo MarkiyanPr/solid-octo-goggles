@@ -1,0 +1,42 @@
+[
+    {
+      "categories": "MOBILES & ACCS.",
+      "sections": ["IPHONES", "GAMING SMARTPHONES", "ANDROID SMARTPHONES", "MOBILE ACCESSORIES"]
+    },
+    {
+        "categories": "TABLETS & ACCS.",
+        "sections": ["IPADS", "TABLETS", "TABLET ACCESSORIES"]
+    },
+    {
+        "categories": "COMPUTING & ACCS.",
+        "sections": ["MACBOOKS", "TRENDING LAPTOPS", "LAPTOPS", "GAMING LAPTOPS", "OFFICE ESSENTIALS", "COMPUTING ACCESSORIES"]
+    },
+    {
+        "categories": "TV, AUDIO & VIDEO",
+        "sections": ["TELEVISIONS", "BY SCREEN SIZE", "TV ACCESSORIES", "EARPHONES & HEADPHONES", "SPEAKERS", "AUDIO DEVICES", "DG Hertzz", "DG PLUS - PREMIUM A/V"]
+    },
+    {
+        "categories": "WEARABLES, SMARTWATCHES",
+        "sections": ["SMARTWATCHES", "OTHER WEARABLES"]
+    },
+    {
+        "categories": "HOME & KITCHEN",
+        "sections": ["HOME APPLIANCES", "SMART HOME & SECURITY", "BUILT IN APPLIANCES", "VACUUM CLEANERS", "KITCHEN APPLIANCES"]
+    },
+    {
+        "categories": "GAMING & ACCS.",
+        "sections": ["GAMING CONSOLES", "GAMES", "GAMING PERIPHERALS", "GAMING ESSENTIALS", "GAMING SMARTPHONES", "GAMING LAPTOPS"]
+    },
+    {
+        "categories": "CAMERAS & CAMCORDERS",
+        "sections": ["TRENDING", "CAMERAS", "CAMERAS ACCESSORIES", "DRONES"]
+    },
+    {
+        "categories": "HEALTH, FITNESS, GROOMING",
+        "sections": ["GROOMING APPLIANCES", "HEALTH CARE", "SPORTS & FITNESS", "WATCHES", "FRAGRANCES"]
+    },
+    {
+        "categories": "SOLAR",
+        "sections": ["SAVE WITH SOLAR", "SOLAR COMPONENTS"]
+    }
+]

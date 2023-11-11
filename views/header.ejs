@@ -1,0 +1,176 @@
+<header class="header">
+    <div class="container header_container">
+        <div class="navbar-header">
+            <div class="burger-btn">
+                <div class="burger-menu-wrapper">
+
+                </div>
+                <div class="burger-menu">
+                    <div class="burger-menu-section-log">
+                        <div class="burger-container">
+                            <div class="burger-login-wrapper">
+                                <img src="../../img/burger-login.png" alt="" class="burger-login-logo">
+                                <span class="burger-signin-text">SIGN IN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="burger-menu-section-navbar">
+                        <ul class="burger-navbar-list">
+                            <li class="burger-element" data-value="Shop By Category">
+                                <p class="burger-element-text">Shop By Category</p>
+                                <img src="../img/burger-arrow.png" alt="" class="burger-element-arrow">
+                            </li>
+                            <li class="burger-element" data-value="DEALS">
+                                <p class="burger-element-text">DEALS</p>
+                                <img src="../img/burger-arrow.png" alt="" class="burger-element-arrow">
+                            </li>
+                            <li class="burger-element" data-value="BRANDS">
+                                <p class="burger-element-text">BRANDS</p>
+                                <img src="../img/burger-arrow.png" alt="" class="burger-element-arrow">
+                            </li>
+                            <li class="burger-element" data-value="DG MEMBER">
+                                <p class="burger-element-text">DG MEMBER</p>
+                                <img src="../img/burger-arrow.png" alt="" class="burger-element-arrow">
+                            </li>
+                            <li class="burger-element" data-value="THE DG STORE">
+                                <p class="burger-element-text">THE DG STORE</p>
+                                <img src="../img/burger-arrow.png" alt="" class="burger-element-arrow">
+                            </li>
+                            <li class="burger-element" data-value="WARRANTY">
+                                <p class="burger-element-text">WARRANTY</p>
+                                <img src="../img/burger-arrow.png" alt="" class="burger-element-arrow">
+                            </li>
+                        </ul>
+                        <div class="burger-menu-navbar-panel" data-panel-name = "category" data-nav-chosen="">
+                            <ul class="burger-navbar-panel-list">
+                                <li class="burger-navbar-panel-element burger-navbar-panel-back-btn">
+                                    <img src="../img/burger-panel-btn-arrow.png" alt="" class="burger-navbar-panel-element-arrow">
+                                    <p class="burger-navbar-panel-element-text">Shop By Category</p>
+                                </li>
+                                <% navigation = JSON.parse(navigation) %>
+                                <% navigation.forEach(n => { %>
+                                    <li class="burger-navbar-panel-element" data-value="<%=n.categories%>">
+                                        <p class="burger-navbar-panel-element-text"><%=n.categories%></p>
+                                        <img src="../img/burger-panel-arrow.png" alt="" class="burger-navbar-panel-element-arrow">
+                                    </li>
+                                <%}) %>
+                            </ul>                        
+                        </div>
+                        <div class="burger-menu-navbar-panel" data-panel-name = "section" data-category-chosen = "">
+                            <ul class="burger-navbar-panel-list">
+                            </ul>
+                        </div>
+                        <div class="burger-menu-navbar-panel" data-panel-name = "products" data-section-chosen = "">
+                            <ul class="burger-navbar-panel-list">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger-menu-section-account">
+                        <div class="burger-container">
+                            <div class="burger-menu-section-account-list-wrapper">
+                                <ul class="burger-menu-section-account-list">
+                                    <li>
+                                        <a href="">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Orders</a>
+                                    </li>
+                                    <li>
+                                        <a href="">My Product Warranty</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Addresses</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Account Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Recharges</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Payment Methods</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/start">
+                <img src="../img/sharaf-dg-uae-logo.svg" alt="" class="navbar-header-sharaf-logo">
+            </a>
+            <div class="navbar-search">
+                <div class="searchPanAndRes_wrapper">
+                    
+                </div>
+                <form action="" class="navbar-search-form">
+                    <a href="">
+                        <img src="../img/loupe.png" alt="" class="search-form-loupe-logo">
+                    </a>
+                    <input type="text" class="search-form-text-input" placeholder="Search Sharaf DG">
+                </form>
+                <a href="" class="header-euronics">
+                    <img src="../img/euronics-group.png" alt="" class="header-euronics-logo">
+                </a>
+                <div class="search-result-panel">
+                    <div class="search-result-panel-container">
+                        <div class="results-products-box-flex">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-flag">
+                <img src="../img/lang-icon.png" alt="" class="navbar-flag-logo">
+                <div class="navbar-flag-text">EN</div>
+            </div>
+            <div class="navbar-login">
+                <a href="">
+                    <div class="navbar-login-wrapper">
+                        <img src="../img/Sign-logo.png" alt="" class="login-logo">
+                        <span class="signin-text">SIGN IN</span>
+                    </div>
+                </a>
+            </div>
+            <div class="cartview">
+                <a href="/cart">
+                    <img src="../img/cart.png" alt="" class="navbar-header-cart-logo">
+                    <div class="cartview-count">
+                        2
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="container">
+            <div class="navigation-menu_wrapper">
+                <ul class="navigation-menu list-inline">
+                    <li>
+                        <span class="navigation-menu__item-title">
+                            Shop by category
+                            <img src="../img/arrow.png" alt="">
+                        </span>
+                    </li>
+                    <li class="sdg_top__menu"><a href="">DEALS</a></li>
+                    <li class="sdg_top__menu"><a href="">BRANDS</a></li>
+                    <li class="sdg_top__menu"><a href="">DG MEMBER</a></li>
+                    <li class="sdg_top__menu"><a href="">THE DG STORE</a></li>
+                    <li class="sdg_top__menu"><a href="">WARRANTY</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordeon-wrapper">
+        <div class="container">
+            <div class="accordeon-greed">
+                <div class="accordeon-category-box">
+                    <ul class="accordeon-category-list">
+                    </ul>
+                </div>
+                <div class="accordeon-sections-box">
+                </div>
+                <div class="accordeon-brands-box"></div>
+            </div>
+        </div>
+    </div>
+</header>

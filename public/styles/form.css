@@ -1,0 +1,148 @@
+.forms-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.form_box{
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 400px;
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: 0 5px 5px -5px rgba(107, 107, 107, 0.5);
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.form-container{
+    padding: 10px;
+}
+
+.form_section h1{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(73, 73, 73);
+}
+
+
+.form_section:not(:first-child){
+    margin-top: 20px;
+}
+
+.form_label{
+    position: relative;
+    padding: 0px 5px;
+    left: 10px;
+    top: 20px;
+    font-size: 12px;
+    color: black;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+}
+.form_input{
+    outline: none;
+    font-size: 15px;
+    padding: 0px 10px;
+    color: rgb(56, 56, 56);
+    letter-spacing: 1.5px;
+    width: 100%;
+    min-height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(155, 155, 155);
+}
+.form_input:focus{
+    border: 1px solid #0079c0;
+}
+
+.payment_small_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px 30px;
+}
+
+option{
+    font-size: 14px;
+}
+
+.form_checkbox{
+   background-color: #0079c0;
+}
+
+.saveCardWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 5px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.saveCardWrapperBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.labelSaveCard{
+    font-size: 14px;
+}
+
+.settings_section_label{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 5px;
+}
+
+.saveCardWrapper img{
+    width: 100px;
+}
+
+
+
+.buy_section{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.priceInfoWrapper span{
+    font-size: 16px;
+}
+.priceInfoWrapper p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn{
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    width: 150px;
+    padding: 10px 0px;
+    border-radius: 6px;
+    border: 1px solid #0079c1;
+    background-color: #0079c1;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+
+
+.code_btn{
+    margin-top: 20px;
+}
+
+
+@media (max-width: 540px){
+    .buy_section{
+        padding: 0px 20px;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 5px 5px 3px rgba(107, 107, 107, 0.5);
+    }
+}
